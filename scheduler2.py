@@ -6,7 +6,7 @@ BLANK=1 #The number of columns that come before slots or events
 SLOTS=4
 EVENTS=3
 
-filename="test.csv"#input("File Name (.csv) >>")
+filename=input("File Name (.csv) >>")
 with open(filename) as file:
     raw_file=file.readlines()
 raw_file=[line.rstrip("\n") for line in raw_file]
